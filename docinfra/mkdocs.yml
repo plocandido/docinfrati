@@ -1,0 +1,92 @@
+site_name: INFRAESTRUTURA DE TI
+site_url: http://127.0.0.1:8000/docinfra/
+site_description: Documentation the IT Infrastructure 
+site_author: Pedro Luiz de Oliveira Cândido
+nav:
+    - HOME: index.md
+    - INFRAESTRUTURA:
+      - Sede: se/networks.md
+      - Rio Branco: rb/networks.md
+      - Zona Norte: zn/networks.md
+      - Caicó: cai/networks.md
+      - Mossoró: mos/networks.md
+    - SERVIDORES: 
+      - Sede: se/server.md
+      - Rio Branco: rb/server.md
+      - Zona Norte: zn/server.md
+      - Caicó: cai/server.md
+      - Mossoró: mos/server.md
+    - SUPORTE: se/support.md
+    - SISTEMAS: se/system.md
+    - BACKUPS: se/backups.md
+    - STORAGES: se/storage.md
+    - FIREWALL: se/firewall.md
+    - POLITICAS: se/policy.md
+    - SEGURANÇA: se/security.md
+    - ANTIVIRUS: se/antivirus.md
+    - MONITORAMENTO: se/monitoring.md
+    - SCRIPTS: se/scripts.md
+    - FERRAMENTAS: se/tools.md
+    - SOFTWARE HOMOLOGADOS: se/approved-programs.md
+    - OUTSOURCING: se/outsourcing.md   
+    - BASE DE CONHECIMENTO: se/knowledge.md
+theme:
+    language: pt
+    name: material
+    logo: img/network_icon.svg
+    favicon: img/network_icon.svg
+    palette:
+      primary: deep orange
+      accent: teal
+      scheme: default
+    features:
+    - navigation.indexes
+    - search.highlight
+    # - navigation.tabs    
+    # - navigation.instant
+    font:
+      text: Roboto
+      code: Roboto Mono
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+plugins:
+  - search:
+      lang:
+        - en
+        - pt
+#   - macros
+extra:
+  disqus: ""
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/plocandido
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/plo_candido
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/plocandido/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/plo.candido
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:plo.candido@outlook.com
